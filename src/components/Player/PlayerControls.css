@@ -1,0 +1,68 @@
+.player-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px 0;
+}
+
+.control-btn {
+  background: #2a2a2a;
+  border: none;
+  color: #fff;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 18px;
+  transition: all 0.3s ease;
+}
+
+.control-btn:hover {
+  background: #3a3a3a;
+  transform: scale(1.1);
+}
+
+.control-btn:active {
+  transform: scale(0.95);
+}
+
+.play-btn {
+  width: 65px;
+  height: 65px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  font-size: 22px;
+  box-shadow: 0 5px 20px rgba(102, 126, 234, 0.4);
+}
+
+.play-btn:hover {
+  background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+  transform: scale(1.15);
+  box-shadow: 0 8px 30px rgba(102, 126, 234, 0.6);
+}
+
+.prev-btn,
+.next-btn {
+  font-size: 20px;
+}
+
+@media (max-width: 968px) {
+  .player-controls {
+    gap: 15px;
+  }
+
+  .control-btn {
+    width: 45px;
+    height: 45px;
+    font-size: 16px;
+  }
+
+  .play-btn {
+    width: 60px;
+    height: 60px;
+    font-size: 20px;
+  }
+}

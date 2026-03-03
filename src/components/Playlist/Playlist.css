@@ -1,0 +1,45 @@
+.playlist-section {
+  background: #121212;
+  padding: 30px;
+  overflow-y: auto;
+}
+
+.playlist-header {
+  margin-bottom: 25px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #2a2a2a;
+}
+
+.playlist-header h2 {
+  font-size: 32px;
+  margin-bottom: 8px;
+}
+
+.playlist-header p {
+  color: #888;
+  font-size: 14px;
+}
+
+.song-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* Scrollbar styling */
+.playlist-section::-webkit-scrollbar {
+  width: 8px;
+}
+
+.playlist-section::-webkit-scrollbar-track {
+  background: #1a1a1a;
+}
+
+.playlist-section::-webkit-scrollbar-thumb {
+  background: #3a3a3a;
+  border-radius: 4px;
+}
+
+.playlist-section::-webkit-scrollbar-thumb:hover {
+  background: #4a4a4a;
+}
